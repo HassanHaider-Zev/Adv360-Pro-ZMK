@@ -114,4 +114,4 @@ jobs:
           name: firmware-clique
           path: |
             ${{ steps.get_info.outputs.file_prefix }}-left.uf2
-            ${{ steps.get_info.outputs.file_prefix }}-right.uf2
+            ${{ steps.get_info.outputs.file_prefix }}-right.uf2 
