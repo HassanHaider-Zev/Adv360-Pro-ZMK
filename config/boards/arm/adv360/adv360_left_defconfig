@@ -78,8 +78,12 @@ CONFIG_ZMK_BEHAVIOR_LOCAL_ID_TYPE_CRC16=y
 CONFIG_ZMK_POINTING=y
 
 
-# Explicitly sets the Bluetooth HID appearance code to 961 (Standard HID Keyboard)
+# Explicitly force Apple-friendly Keyboard HID descriptors
 CONFIG_BT_DEVICE_APPEARANCE=961
+CONFIG_ZMK_HID_KEYBOARD_NKRO_EXTENDED_REPORT=y
+
+# Forces the master chip to explicitly declare itself as a peripheral input category
+CONFIG_BT_GATT_ENFORCE_SUBSCRIPTION=n
 
 # --- ENABLE BLUETOOTH BATTERY TRACKING ---
 CONFIG_ZMK_BATTERY_REPORTING=y
